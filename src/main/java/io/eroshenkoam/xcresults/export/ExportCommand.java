@@ -167,7 +167,6 @@ public class ExportCommand implements Runnable {
         final ExportMeta exportMeta = new ExportMeta();
         exportMeta.setStart(meta.getStart());
         meta.getLabels().forEach(exportMeta::label);
-        exportMeta.label(SUITE, testableSummary.get(TARGET_NAME).get(VALUE).asText());
         return exportMeta;
     }
 
